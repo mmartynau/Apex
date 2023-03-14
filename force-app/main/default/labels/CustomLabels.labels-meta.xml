@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Account_Service_Exception_Could_Not_Insert</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Account Service Exception Could Not Insert</shortDescription>
+        <value>Could Not Insert Account or Contacts: {0}</value>
+    </labels>
+    <labels>
+        <fullName>Account_Service_Exception_Not_Allowed_to_Create</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Account Service Exception Not Allowed to Create</shortDescription>
+        <value>Not Allowed to Create Account or Contact</value>
+    </labels>
+    <labels>
+        <fullName>Account_Service_Exception_Without_Permission</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Account Service Exception Without Permission</shortDescription>
+        <value>The User doesn&apos;t have permission to create account</value>
+    </labels>
+    <labels>
+        <fullName>Account_Service_Incorrect_JSON</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Account Service Incorrect JSON</shortDescription>
+        <value>Incorrect JSON request</value>
+    </labels>
+    <labels>
+        <fullName>Incorrect_Account_ID</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Account Service Incorrect Account ID</shortDescription>
+        <value>Incorrect Account ID</value>
+    </labels>
+</CustomLabels>
