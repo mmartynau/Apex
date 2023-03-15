@@ -21,7 +21,7 @@ global with sharing class AccountService {
     return accResult;
     }
     @HttpPost
-    global static void postMethod(){
+    global static String postMethod(){
         Savepoint sp = Database.setSavepoint();
         AccountServiceJSONParser result;
         List<Contact> contList = new List<Contact>();
@@ -50,11 +50,7 @@ global with sharing class AccountService {
             new List<Object>{e.getMessage()}));
         }
         AccountServiceResponce response = new AccountServiceResponce(acc, contList);
-        RestResponse res = RestContext.response;
-        res = new RestResponse();
-        RestContext.response = res;
-        res.responseBody = Blob.valueOf(JSON.serialize(response));
-        res.statusCode = 200;
+    return JSON.serialize(response);
     }
     global class AccountServiceException extends Exception{}
 }
